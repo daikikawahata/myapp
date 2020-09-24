@@ -13,7 +13,7 @@
     {% for shop in object_list %}
     <tr>
       <td>{{ shop.category.name }}</td>
-      <td><h4><a href='{% url "bestdish:detail" shop.pk %}' class='badge badge-info'>{{ shop.name }}</a></h4></td>
+      <td><h4><a href='{% url "bestdish:detail" shop.pk %}' class='badge badge-warning'>{{ shop.name }}</a></h4></td>
       <td>{{ shop.address }}</td>
     </tr>
    {% endfor %}
