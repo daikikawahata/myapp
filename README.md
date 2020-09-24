@@ -24,7 +24,7 @@
 ## categorys テーブル
 
 | column     |
-| ----       |
+| ---------- |
 | name       |
 | author     |
 | created_at |
@@ -33,5 +33,5 @@
 ## Author テーブル
 
 | column  |
-|         |
+| ------- |
 | user    |
