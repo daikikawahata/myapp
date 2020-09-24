@@ -3,9 +3,10 @@
   <h1>お店情報の{{ object|yesno:'更新,作成'}}</h1>
   <form action="" method="post" >{% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="submit">{{ object|yesno:'更新,作成'}}</button>
+    <button type="submit" class="submit btn btn-outline-success">{{ object|yesno:'更新,作成'}}</button>
   </form>
+  <p> </p>
   <div>
-    <a href='JavaScript:history.back()'>&lt; 戻る</a>
+    <a href='JavaScript:history.back()' class='btn btn-outline-secondary'>&lt; 戻る</a>
   </div>
 {% endblock %}

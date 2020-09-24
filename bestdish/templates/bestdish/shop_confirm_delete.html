@@ -4,10 +4,10 @@
   <p>'{{ object.name }}'を削除しますか？</p>
   <form action="" method="post" >{% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="submit delete">削除</button>
+    <button type="submit" class="submit delete btn btn-outline-danger">削除</button>
   </form>
-
+  <p> </p>
   <div>
-    <a href='JavaScript:history.back()'>&lt; 戻る</a>
+    <a href='JavaScript:history.back()' class='btn btn-outline-secondary'>&lt; 戻る</a>
   </div>
 {% endblock %}
