@@ -3,7 +3,6 @@ from django.views import generic
 from .models import Category, Shop
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
-from .forms import SearchForm
 
 
 class IndexView(generic.ListView):
